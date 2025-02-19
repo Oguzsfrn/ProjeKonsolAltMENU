@@ -1,0 +1,13 @@
+def hmmenu():
+    #print("╔"+"═"*20+"╗")
+    print("╔═════════════════════╗")
+    print("║   HESAP MAKİNESİ    ║")
+    print("║                     ║")
+    print("║  1-Toplama          ║")
+    print("║  2-Çıkarma          ║")
+    print("║  3-Çarpma           ║")
+    print("║  4-Bölme            ║")
+    print("║                     ║")
+    print("║    Seçimiz nedir?   ║")
+    print("╚═════════════════════╝")
+    secim = input()

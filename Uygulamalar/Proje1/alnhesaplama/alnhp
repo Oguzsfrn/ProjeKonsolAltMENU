@@ -1,0 +1,39 @@
+import math
+def ucgen_alani():
+    taban = float(input("Üçgenin tabanını girin: "))
+    yükseklik = float(input("Üçgenin yüksekliğini girin: "))
+    return 0.5 * taban * yükseklik
+
+def dikdortgen_alani():
+    uzun_kenar = float(input("Dikdörtgenin uzun kenarını girin: "))
+    kisa_kenar = float(input("Dikdörtgenin kısa kenarını girin: "))
+    return uzun_kenar * kisa_kenar
+
+def daire_alani():
+    yaricap = float(input("Dairenin yarıçapını girin: "))
+    return math.pi * (yaricap ** 2)
+
+def main_menu():
+    while True:
+        print("\nAlan Hesaplama Menüsü:")
+        print("1. Üçgen Alanı")
+        print("2. Dikdörtgen Alanı")
+        print("3. Daire Alanı")
+        print("4. Çıkış")
+        
+        secim = input("Bir seçenek girin (1-4): ")
+        
+        if secim == '1':
+            print(f"Üçgenin alanı: {ucgen_alani():.2f}")
+        elif secim == '2':
+            print(f"Dikdörtgenin alanı: {dikdortgen_alani():.2f}")
+        elif secim == '3':
+            print(f"Dairenin alanı: {daire_alani():.2f}")
+        elif secim == '4':
+            print("Çıkılıyor...")
+            break
+        else:
+            print("Geçersiz seçim. Lütfen 1-4 arasında bir seçenek girin.")
+
+# Programı çalıştır
+main_menu()
