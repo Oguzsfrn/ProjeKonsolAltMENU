@@ -11,3 +11,4 @@ def oyunmn():
     print("╚═════════════════════╝")
     secim = input()
     
+# ....
