@@ -1,0 +1,25 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {
+    'Year': [2020, 2021, 2022, 2023, 2024],
+    'Gold_TL': [450, 500, 550, 600, 650],
+    'Gold_USD': [1500, 1600, 1700, 1800, 1900],
+    'Gold_EUR': [1300, 1400, 1500, 1600, 1700],
+    'Gold_Crypto': [0.1, 0.15, 0.2, 0.25, 0.3]
+}
+
+df = pd.DataFrame(data)
+
+plt.figure(figsize=(10, 6))
+plt.plot(df['Year'], df['Gold_TL'], label='Gold in TL')
+plt.plot(df['Year'], df['Gold_USD'], label='Gold in USD')
+plt.plot(df['Year'], df['Gold_EUR'], label='Gold in EUR')
+plt.plot(df['Year'], df['Gold_Crypto'], label='Gold in Crypto')
+
+plt.xlabel('Year')
+plt.ylabel('Value')
+plt.title('Gold Value Over Years')
+plt.legend()
+plt.grid(True)
+plt.show()

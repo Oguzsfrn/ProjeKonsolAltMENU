@@ -1,10 +1,11 @@
-import  hesapm.hesapmakinesi
-import  oyunlar.oyun
-import  nothesaplamamnu.nothp
+import hesapm.hesapmakinesi
+import oyunlar.oyun
+import nothesaplamamnu.nothp
+import alnhesaplama.alan_hesaplama
+import carpımtb.carpim_tablosu
 
 def anamenu():
     print("\033[1;32;40m")
-    #print("╔"+"═"*20+"╗")
     print("╔═══════════════════════╗")
     print("║     Uygulamalar       ║")
     print("║                       ║")
@@ -19,22 +20,21 @@ def anamenu():
     print("║    Seçimiz nedir?     ║")
     print("╚═══════════════════════╝")
     secim = input()
-    if secim == "1" :
+    if secim == "1":
         hesapm.hesapmakinesi.hmmenu()
-        anamenu()
-    if secim == "2" :
+    elif secim == "2":
         oyunlar.oyun.oyunmn()
-        anamenu()
-    if secim == "3" :
-        ()
-        anamenu()
-    if secim == "4" :
+    elif secim == "3":
+        alnhesaplama.alan_hesaplama.alan_hesapla()
+    elif secim == "4":
         nothesaplamamnu.nothp.not_hesapla()
-        anamenu()
+    elif secim == "5":
+        carpımtb.carpim_tablosu.carpim_tablosu()
+    elif secim == "7":
+        print("Çıkış yapılıyor...")
+        return
     else:
-        anamenu()
-    # 201 ╔ # 205 ═ # 187 ╗ # 186 ║ # 200 ╚
-    # 188 ╝
-
+        print("Geçersiz seçim, lütfen tekrar deneyin.")
+    anamenu()
 
 anamenu()
