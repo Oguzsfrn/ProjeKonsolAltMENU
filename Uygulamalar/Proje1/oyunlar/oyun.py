@@ -50,3 +50,18 @@ def tas_kagit_makas():
         print("Bilgisayar kazandı!")
     else:
         print("Siz kazandınız!")
+=======
+    print("╔═════════════════════╗")
+    print("║      OYUNLAR        ║")
+    print("║                     ║")
+    print("║  1-Yılan oyunu      ║")
+    print("║  2-Sayı tahmin      ║")
+    print("║  3-Yazı-tura        ║")
+    print("║  4-...              ║")
+    print("║                     ║")
+    print("║    Seçimiz nedir?   ║")
+    print("╚═════════════════════╝")
+    secim = input()
+    
+# ....
+>>>>>>> 41c7c9040f7174052b5a3daf28a6105ac7d4292d
