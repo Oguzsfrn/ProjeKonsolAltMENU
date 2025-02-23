@@ -1,8 +1,10 @@
-import hesapm.hesapmakinesi
+import hesapmenu.hesapmakinesi
 import oyunlar.oyun
 import nothesaplamamnu.nothp
 import alnhesaplama.alan_hesaplama
 import carpımtb.carpim_tablosu
+import takvim.takvim_uygulamasi
+import doviz.doviz_uygulamasi
 
 def anamenu():
     print("\033[1;32;40m")
@@ -14,14 +16,15 @@ def anamenu():
     print("║  3-Alan Hesaplama     ║")
     print("║  4-Not Hesaplama      ║")
     print("║  5-Çarpım Tablosu     ║")
-    print("║  6-....               ║")
-    print("║  7-Çıkış              ║")
+    print("║  6-Takvim             ║")
+    print("║  7-Döviz Kurları      ║")
+    print("║  8-Çıkış              ║")
     print("║                       ║")
     print("║    Seçimiz nedir?     ║")
     print("╚═══════════════════════╝")
     secim = input()
     if secim == "1":
-        hesapm.hesapmakinesi.hmmenu()
+        hesapmenu.hesapmakinesi.hmmenu()
     elif secim == "2":
         oyunlar.oyun.oyunmn()
     elif secim == "3":
@@ -30,7 +33,11 @@ def anamenu():
         nothesaplamamnu.nothp.not_hesapla()
     elif secim == "5":
         carpımtb.carpim_tablosu.carpim_tablosu()
+    elif secim == "6":
+        takvim.takvim_uygulamasi.takvim_goster()
     elif secim == "7":
+        doviz.doviz_uygulamasi.doviz_goster()
+    elif secim == "8":
         print("Çıkış yapılıyor...")
         return
     else:
