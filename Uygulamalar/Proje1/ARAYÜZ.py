@@ -4,7 +4,7 @@ import nothesaplamamnu.nothp
 import alnhesaplama.alan_hesaplama
 import carpımtb.carpim_tablosu
 import takvim.takvim_uygulamasi
-import doviz.doviz_uygulamasi
+# import doviz.doviz_uygulamasi
 
 def anamenu():
     print("\033[1;32;40m")
