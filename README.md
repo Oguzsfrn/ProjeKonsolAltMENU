@@ -57,3 +57,9 @@ Takvim
 Çıkış
 
 burda videolu anlatım:https://youtu.be/W7UnVjYJtm0
+
+
+
+
+![download](https://github.com/user-attachments/assets/e70ed3d8-9c9f-4401-934d-87a8e0a7a0ab)
+
