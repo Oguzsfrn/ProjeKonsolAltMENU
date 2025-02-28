@@ -56,3 +56,4 @@ Takvim
 
 Çıkış
 
+burda videolu anlatım:https://youtu.be/W7UnVjYJtm0
